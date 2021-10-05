@@ -106,19 +106,20 @@ ol li
 
 #header
 { 
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 #logo
 { width: 860px;
-  position: relative;
-  height: 200px;}
+  position: static;
+  height: 25px;
+}
 
 #logo #logo_text 
-{ position: fixed; 
-  top: 170px;
-  left: 506px;
- 
+{ position: static; 
+  top: 0px;
+  left: 200px;
+  
 }
 
 #logo h1, #logo h2
