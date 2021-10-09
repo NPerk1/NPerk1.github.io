@@ -276,7 +276,7 @@ ul#menu li a:hover
 { padding: 5px; 
   width: 299px; 
   font: 100% arial; 
-  border: 1px solid #E5E5DB; 
+  border: 1px solid #000000; 
   background: #FFF; 
   color: #47433F;}
   
@@ -288,8 +288,8 @@ ul#menu li a:hover
   height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer; 
-  background: #3B3B3B; 
-  color: #FFF;}
+  background: #000000; 
+  color: rgb(255, 255, 255);}
 
 .form_settings textarea, .form_settings select
 { font: 100% arial; 
@@ -325,3 +325,5 @@ table tr td
 { background: #E5E5DB;
   color: #47433F;
   border-top: 1px solid #FFF;}
+
+ 
