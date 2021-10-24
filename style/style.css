@@ -1,13 +1,18 @@
-html{height: 100%;}
+*{
+  margin: 0;
+  padding: auto;
+  font-family: "lucida sans", arial, sans-serif;
+
+}
 
 body
-{ font-family: "lucida sans", arial, sans-serif;
-  padding: 0px;
-  margin: 0px;
-  font-size: .78em;
-  background: url(background.jpg) no-repeat;
-  background-size: cover;
-  color: #5D5D5D;}
+{ 
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(bg5.jpg);
+
+ }
 
 p
 { margin: 0px;
@@ -130,9 +135,11 @@ ol li
 
 #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
 { padding: 22px 0 0 0;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  border: 0;}
+  border: 0;
+  font-size: 35px;
+}
 
 #logo_text h1 a .logo_colour
 { color: #444;}
@@ -146,7 +153,7 @@ ol li
   color: #fff;}
 
 #menubar
-{ width: 870px;
+{ width: 840px;
   height: 46px;
   padding-top: 4px;
   padding-left: 4px;} 
@@ -192,7 +199,7 @@ ul#menu li a:hover
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 10px 20px 20px 20px;
-  background: #F6F6F0 url(back.png) repeat-y;
+  background: rgb(255,255,255,.7);
   border: 3px solid rgb(0, 0, 0);} 
 
 .sidebar
@@ -235,25 +242,31 @@ ul#menu li a:hover
 
 #footer
 { width: 916px;
+  position: relative;
   font-family: 'trebuchet ms', sans-serif;
-  font-size: 130%;
-  height: 35px;
-  padding: 20px 0 5px 0;
+  font-size: 15px;
+  margin-top: 5px;
+  height: 5px;
   text-align: center; 
   background: transparent;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.1em;}
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  
+}
 
 #footer p
-{ padding: 0;}
+{ padding: 0;
+text-decoration: none;
+}
 
 #footer a, #footer a:hover
-{ color: #000000;
-  text-decoration: wavy;}
+{ color: #ffffff;
+  text-decoration: none;}
 
 #footer a:hover
-{ text-decoration: underline;}
+{ text-decoration: none;}
 
 .search
 { color: #555; 
