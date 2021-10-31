@@ -8,7 +8,7 @@
 body
 { 
   margin: 0;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background: url(bg5.jpg);
 
@@ -240,12 +240,66 @@ ul#menu li a:hover
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
 
+#content2 {
+  width: 858px;
+  height: 700px;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 10px 20px 20px 20px;
+  background: rgb(255,255,255,.7);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+#content2 h1{
+  text-align: center;
+}
+
+.content3
+{ width: 858px;
+  height: 550px;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 10px 20px 20px 20px;
+  background: rgb(255,255,255,.7);
+  border: 3px solid rgb(0, 0, 0);}
+
+#email{
+  height: 35px;
+  width: 420px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+}
+
+#message{
+height: 140px;
+width: 420px;
+margin-bottom: 5px;
+white-space: initial;
+border: 2px solid black;
+}
+
+#submit{
+  border: 2px solid black;
+  width: 120px;
+  height: 35px;
+}
+
+#contactemail{
+  margin-top: 180px;
+}
+
+span{
+  color: rgb(29, 75, 145);
+  
+}
+
 #footer
 { width: 916px;
   position: relative;
   font-family: 'trebuchet ms', sans-serif;
   font-size: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   height: 5px;
   text-align: center; 
   background: transparent;
@@ -255,6 +309,7 @@ ul#menu li a:hover
   text-decoration: none;
   
 }
+
 
 #footer p
 { padding: 0;
@@ -267,6 +322,8 @@ text-decoration: none;
 
 #footer a:hover
 { text-decoration: none;}
+
+
 
 .search
 { color: #555; 
@@ -339,4 +396,3 @@ table tr td
   color: #47433F;
   border-top: 1px solid #FFF;}
 
- 
