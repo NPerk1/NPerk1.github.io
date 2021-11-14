@@ -241,11 +241,11 @@ ul#menu li a:hover
   line-height: 1.5em;}
 
 #content2 {
-  width: 858px;
-  height: 700px;
+  width: 920px;
+  height: 1600px;
   text-align: center;
   margin: 0 auto 0 auto;
-  padding: 10px 20px 20px 20px;
+ 
   background: rgb(255,255,255,.7);
   border: 3px solid rgb(0, 0, 0);
   color: #000000;

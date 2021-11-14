@@ -31,10 +31,14 @@
     
  
         <div id="content2">
-          <h1>Motor Homes</h1>
+          <h1>Campers For Sale</h1>
+          <p id="campers"></p>
+         
       </div>
+
+
       <script>
-          fetch('sample.json')
+          fetch('fifth.json')
               .then(function (response) {
                   return response.json();
               })
@@ -45,25 +49,42 @@
                   console.log('error: ' + err);
               });
           function appendData(data) {
-              var mainContainer = document.getElementById("content2");
+              var mainContainer = document.getElementById("campers");
+              
+
               for (var i = 0; i < data.length; i++) {
+                //5th
+                  var div5 = document.createElement("div");
                   var div = document.createElement("div");
                   var div2 = document.createElement("div");
                   var div3 = document.createElement("div");
                   var div4 = document.createElement("div");
+
+                  div5.style.color = "blue";
+                  div4.style.color = "blue";
+                
+
+                  
                   div.innerHTML = '' + data[i].name;
                   div2.innerHTML = '' + data[i].selection;
                   div3.innerHTML = '' + data[i].url;
                   div4.innerHTML = '-------------------------------------------------------------------------------------------------------------------------------------------' + data[i].space;
+                  div5.innerHTML = '' + data[i].type;
+                  
+                  mainContainer.appendChild(div5);
                   mainContainer.appendChild(div);
                   mainContainer.appendChild(div2);
                   mainContainer.appendChild(div3);
                   mainContainer.appendChild(div4);
+                  
+
               }
           }
       </script>
-  
-  
+
+
+
+
     <div id="footer">
       <p><a href="index.html">Home</a> | <a href="page.html">Prices</a> | <a href="contact.html">Contact Us</a></p>
     </div>
