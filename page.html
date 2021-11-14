@@ -28,30 +28,42 @@
         </ul>
       </div>
 
-    </div>
-      <div id="content2">
-        <h1>Find Prices of Rvs</h1>
-        <p></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-
-
-
-
+    
+ 
+        <div id="content2">
+          <h1>Motor Homes</h1>
+      </div>
+      <script>
+          fetch('sample.json')
+              .then(function (response) {
+                  return response.json();
+              })
+              .then(function (data) {
+                  appendData(data);
+              })
+              .catch(function (err) {
+                  console.log('error: ' + err);
+              });
+          function appendData(data) {
+              var mainContainer = document.getElementById("content2");
+              for (var i = 0; i < data.length; i++) {
+                  var div = document.createElement("div");
+                  var div2 = document.createElement("div");
+                  var div3 = document.createElement("div");
+                  var div4 = document.createElement("div");
+                  div.innerHTML = '' + data[i].name;
+                  div2.innerHTML = '' + data[i].selection;
+                  div3.innerHTML = '' + data[i].url;
+                  div4.innerHTML = '-------------------------------------------------------------------------------------------------------------------------------------------' + data[i].space;
+                  mainContainer.appendChild(div);
+                  mainContainer.appendChild(div2);
+                  mainContainer.appendChild(div3);
+                  mainContainer.appendChild(div4);
+              }
+          }
+      </script>
+  
+  
     <div id="footer">
       <p><a href="index.html">Home</a> | <a href="page.html">Prices</a> | <a href="contact.html">Contact Us</a></p>
     </div>
