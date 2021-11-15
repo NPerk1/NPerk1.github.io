@@ -30,6 +30,7 @@
 
             <div id="content2">
                 <h1>Campers For Sale</h1>
+                
                 <p id="campers"></p>
         
         <table class="table table-striped">
@@ -42,17 +43,23 @@
         </table>
         </div>
                
-            <script type="text/javascript" language="javascript" src="fifth.json"></script> 
-            <script type="text/javascript">
-            var myArray = [
-	    {   
+<script type="text/javascript" language="javascript" src="fifth.json"></script> 
+<script type="text/javascript">
+    
+const grade =["A", "B", "C", "D", "F"]
+
+
+
+var myArray = {
+"campers": [
+        {
         "img": "https://assets-cdn-interactrv.netdna-ssl.com/interactrv/unit_tech_drawing/imgh_800x600-m1202201616043896/mod36720.jpg",
         "img2": "https://assets-cdn-interactrv.netdna-ssl.com/asrvcenter/unit_photo/imgh_800x600-wm_asrvcenter_com-m0723202116492404/unit_photo_202107230449240426463371.jpg",
         "img3": "https://assets-cdn-interactrv.netdna-ssl.com/asrvcenter/unit_photo/imgh_800x600-wm_asrvcenter_com-m0723202116492454/unit_photo_202107230449245394483875.jpg",
         "type": "Fifth Wheel",
         "name": "Used 2011 Keystone RV Sydney 322FRL",
         "url": "https://www.asrvcenter.com/product/used-2011-keystone-rv-sydney-322frl-1548216-5",
-        "selection": "List Price: $19,995",
+        "selection": "19995",
         "space": ""
        },
        {
@@ -62,7 +69,7 @@
         "type": "Fifth Wheel",
         "name": "Used 2015 Grand Design Reflection 27RL",
         "url": "https://www.asrvcenter.com/product/used-2015-grand-design-reflection-27rl-1628317-5",
-        "selection": "Our Price: $27,995",
+        "selection": "27995",
         "space": ""
        },
        {
@@ -72,7 +79,7 @@
         "type": "Fifth Wheel",
         "name": "Used 2014 Forest River RV Blue Ridge 3125RT",
         "url": "https://www.asrvcenter.com/product/used-2014-forest-river-rv-blue-ridge-3125rt-1616263-5",
-        "selection": "List Price: $35,995",
+        "selection": "35995",
         "space": ""
        },
        {
@@ -84,7 +91,6 @@
         "url": "https://www.asrvcenter.com/product/new-2021-palomino-puma-257ress-1532612-5",
         "selection": "SALE PRICE: $33,995",
         "space": ""
-
        },
        {
         "img" : "https://assets-cdn-interactrv.netdna-ssl.com/interactrv/unit_tech_drawing/imgh_800x600-m0119202118472046/unit_tech_drawing_202101190647204636157852.jpg",
@@ -95,7 +101,6 @@
         "url": "https://www.asrvcenter.com/product/new-2021-palomino-puma-295bhss-1554180-5",
         "selection": "SALE PRICE: $34,995",
         "space": ""
-
        },
        {
         "img" : "https://assets-cdn-interactrv.netdna-ssl.com/interactrv/unit_tech_drawing/imgh_800x600-m1216201616252722/unit_tech_drawing_201612160425272247643839.jpg",
@@ -106,7 +111,6 @@
         "url": "https://www.asrvcenter.com/product/used-2017-coachmen-rv-clipper-camping-trailers-1285sst-classic-1621311-7",
         "selection": "List Price: $13,995",
         "space": ""
-
        },
        {
         "img" : "https://assets-cdn-interactrv.netdna-ssl.com/asrvcenter/unit_photo/imgh_800x600-wm_asrvcenter_com-m0525202115235976/unit_photo_20210525032359766722934.jpg",
@@ -157,33 +161,42 @@
         "url": "https://www.asrvcenter.com/product/used-2014-forest-river-rv-sunseeker-3170ds-ford-1622445-16",
         "selection": "List Price: $59,995",
         "space": ""
-       }
-	]
+       },
+    ]
+}
             
 	buildTable(myArray)
 	function buildTable(data){
 		var table = document.getElementById('myTable')
-		for (var i = 0; i < data.length; i++){
-                 
+		for (var i = 0; i < myArray.campers.length; i++){
+            if(myArray.campers[i].selection >= 100){
+                //return 'style="color:green"'
+            }else{
+                console.log(false)
+            }
+            
+    
+            
+
 var row = 
 `<tr>
-<td> ${data[i].type}: ${data[i].name}</td>
-<td><a href="${data[i].url}">Click Here For More Details</a></td>
-<td>${data[i].selection}</td> 
+<td>${myArray.campers[i].type}</td>
+<td>${myArray.campers[i].name}</td>
+<td>${myArray.campers[i].selection}</td> 
 </tr>`
 
 var row2 =
 `<tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Something here</td>
+<td>Something else</td>
+<td id ="grade">Grade</td>
 </tr>`
 
 var row3 = 
 `<tr>
-<td><img src="${data[i].img}"></td>
-<td><img src="${data[i].img2}"></td>
-<td><img src="${data[i].img3}"></td>
+<td><img src=${myArray.campers[i].img} alt=""></td>
+<td><img src=${myArray.campers[i].img2} alt=""></td>
+<td><img src=${myArray.campers[i].img3} alt=""></td>
 <tr>`
 
 
@@ -193,10 +206,18 @@ var row3 =
 		}
         
 	}
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
             </script>
             
+            
+            
             <div id="footer">
+                <button onclick="myFunction()">Toggle dark mode</button>
                 <p><a href="index.html">Home</a> | <a href="page.html">Prices</a> | <a href="contact.html">Contact Us</a></p>
+                
             </div>
         </div>
 </body>

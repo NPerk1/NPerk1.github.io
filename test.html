@@ -6,6 +6,7 @@
     <meta name="description" content="website description" />
     <meta name="keywords" content="website keywords, website keywords" />
     <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
@@ -39,19 +40,21 @@
         
         </tr>
         <tbody id="myTable">
+            <col id="name">
+            <col id="score">
         </tbody>
         </table>
         </div>
             
 <script type="text/javascript" language="javascript" src="fifth.json"></script> 
 <script type="text/javascript"> 
-const x =["A", "B", "C", "D", "F"]
+
 var jcontent = {
   "campers": [
       {
         "model": "Camper 1",
         "type": "Fifth Wheel",
-        "number": 100000,
+        "number": 1000,
         "grade": ""
       },
       
@@ -69,56 +72,37 @@ var jcontent = {
         "grage": ""
       },
     ]
-
 }
+
 buildTable(jcontent)
 function buildTable(data){  
 var table = document.getElementById('myTable')
-var y = ""
 
-    for(i = 0; i< jcontent.campers.length; i++){
-    if(jcontent.campers[i].number >= 100000){
-        console.log("case 1: greater than $100,000")
-        console.log(jcontent.campers[i])
-        y = x[0]
-        
-        console.log("grade test: "+y)
-    } else if(jcontent.campers[i].number >= 50000){
-        console.log("case 2: greater than $50,000")
-        console.log(jcontent.campers[i])
-        y = x[1]
-        
-        console.log("grade test: "+y)
-    } else if(jcontent.campers[i].number >= 9000){
-        console.log("case 3: greater than $9,000")
-        console.log(jcontent.campers[i])
-        y = x[4]
-        
-        console.log("grade test: "+y)
-    } else {
-        console.log("false")
-    }
 
-var finalPrice ="0"
-finalPrice = jcontent.campers[i].number
-               
+
+for(i=0; jcontent.campers[i]; i++){
+
 var row = 
 `<tr id = row1>
 <td>${jcontent.campers[i].model}</td>
 <td>${jcontent.campers[i].type}</td>
-<td>${"$"+(finalPrice).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</td>
-<td id="grade">${y}</td>
+<td data-value=${jcontent.campers[i].number}></td>
 </tr>`
 table.innerHTML += row
 
     }
-  }
-    
+}
+
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
 
 </script>
           
 <div id="footer">
                 <p><a href="index.html">Home</a> | <a href="page.html">Prices</a> | <a href="contact.html">Contact Us</a></p>
+    <button onclick="myFunction()">Toggle dark mode</button>
             </div>
 </div>
 </body>
