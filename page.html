@@ -11,7 +11,8 @@
 
 <body>
     <div id="main">
-        <div id="header">
+        <div id="heade
+                 r">
             <div id="logo">
                 <div id="logo_text">
                     <!-- class="logo_colour", allows you to change the colour of the text -->
@@ -19,6 +20,7 @@
 
                 </div>
             </div>
+        </div>
             <div id="menubar">
                 <ul id="menu">
                     <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
@@ -47,8 +49,6 @@
 <script type="text/javascript">
     
 const grade =["A", "B", "C", "D", "F"]
-
-
 
 var myArray = {
 "campers": [
@@ -174,17 +174,15 @@ var myArray = {
             }else{
                 console.log(false)
             }
-            
-    
-            
 
 var row = 
 `<tr>
-<td>${myArray.campers[i].type}</td>
-<td>${myArray.campers[i].name}</td>
+<td>${myArray.campers[i].type} ${myArray.campers[i].name}</td>
+<td><a href=${myArray.campers[i].url}>Click Here to See More</a></td>
 <td>${myArray.campers[i].selection}</td> 
 </tr>`
 
+//future site of grading system
 var row2 =
 `<tr>
 <td>Something here</td>
@@ -199,10 +197,10 @@ var row3 =
 <td><img src=${myArray.campers[i].img3} alt=""></td>
 <tr>`
 
-
-			table.innerHTML += row
-            //table.innerHTML += row2
-            table.innerHTML += row3
+table.innerHTML += row
+//Future site of grading system
+//table.innerHTML += row2
+table.innerHTML += row3
 		}
         
 	}
@@ -212,10 +210,8 @@ element.classList.toggle("dark-mode");
 }
             </script>
             
-            
-            
             <div id="footer">
-                <button onclick="myFunction()">Toggle dark mode</button>
+                <button id="darkbutton" onclick="myFunction()">Toggle dark mode</button>
                 <p><a href="index.html">Home</a> | <a href="page.html">Prices</a> | <a href="contact.html">Contact Us</a></p>
                 
             </div>

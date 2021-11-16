@@ -21,7 +21,7 @@ p
 h1, h2, h3, h4, h5, h6 
 { font: normal 179% 'century gothic', arial, sans-serif;
   margin: 0 0 15px 0;
-  padding: 15px 0 5px 0;
+  //padding: 15px 0 5px 0;
     color: #f8f9fa;
 }
 
@@ -99,9 +99,8 @@ blockquote
 }
 
 ul
-{ margin: 2px 0px 18px 16px;
-  padding: 0px;
-    
+{ margin: 10px 0px 18px 16px;
+padding: 0px;
 }
 
 ul li
@@ -132,7 +131,8 @@ ol li
 
 #header
 { 
-  color: rgb(255, 255, 255);
+
+    color: rgb(255, 255, 255);
 }
 
 #logo
@@ -268,7 +268,9 @@ ul#menu li a:hover{
 #content
 { text-align: left;
   width: 613px;
-  padding: 0;}
+  padding: 0;
+    margin-top: 0px;
+}
 
 #content ul
 { 
@@ -310,12 +312,11 @@ border: 2px solid black;
 }
 
 #contactemail{
-  margin-top: 180px;
+  margin-top: px;
 }
 
 span{
   color: #5eceff;
-  
 }
 
 #footer
@@ -323,7 +324,7 @@ span{
   position: relative;
   font-family: 'trebuchet ms', sans-serif;
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 0px;
   height: 5px;
   text-align: center; 
@@ -332,12 +333,12 @@ span{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-decoration: none;
-  
 }
 
 #footer p
 { padding: 0;
 text-decoration: none;
+    margin-bottom: 5px;
 }
 
 #footer a, #footer a:hover
@@ -428,6 +429,8 @@ text-decoration: none;
   background: #6c757d;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #site_content img {
@@ -437,7 +440,7 @@ text-decoration: none;
 
 #content2 {
   width: 1050px;
-  height: auto;
+  height: 4280px;
   text-align: center;
   margin: 0 auto 0 auto;
   background: #6c757d;
@@ -447,19 +450,26 @@ text-decoration: none;
 
 .content3{ 
   width: 1050px;
-  height: auto;
+  height: 353px;
   text-align: center;
   margin: 0 auto 0 auto;
   background: #6c757d;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content3 h1{
+    font-size: 60px;
+    text-shadow: 5px 5px 18px #373737;
 }
 
 #content2 h1{
     font-size: 60px;
     text-align: center;
     text-shadow: 5px 5px 9px #373737;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 0px;
     color: #f8f9fa;
 }
@@ -468,7 +478,7 @@ table
 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -50px;
+    margin-top: -85px;
 }
 
 table a {
@@ -481,6 +491,7 @@ table a:hover{
 
 table th {
     height: 1px;
+    
 }
 
 table tr, table tr td
@@ -496,7 +507,7 @@ table tr td
     color: #343a40;
     height: 10px;
     width: 150px;
-    background-color: #e9ecef;
+    background-color: #fcfcfc;
     box-shadow: 0px 0px 6px #3E4651;
     border-radius: 5px;
 }
@@ -506,6 +517,7 @@ table tr td
     margin-left: auto;
     margin-right: auto;
     width: 300px;
+     border-radius: 3px;
 }
 
 .dark-mode {
@@ -586,6 +598,11 @@ table tr td
     color: #6babc7;
 }
 
+.dark-mode button{
+    background-color: black;
+    color: #DDD;
+}
+
 :root {
   color-scheme: light dark; /* both supported */
 }
@@ -597,4 +614,23 @@ td:after{
 td[data-value="1000"]:after {
     content: attr(data-value);
     color:red;
+}
+
+button {
+    background-color: #495057;
+    margin-bottom: 10px;
+    margin-top: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 13px;
+
+    border-radius: 3px;
+}
+
+button1 {
+    margin-top: 20px;
+}
+
+#darkbutton button{
+    margin-top: 20px;
 }
