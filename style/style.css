@@ -10,7 +10,7 @@ body
   margin: 0;
   width: 99vw;
   height: 100vh;
-   background: #495057;
+   background: #0669fd;
  }
 
 p
@@ -21,8 +21,8 @@ p
 h1, h2, h3, h4, h5, h6 
 { font: normal 179% 'century gothic', arial, sans-serif;
   margin: 0 0 15px 0;
-  //padding: 15px 0 5px 0;
-    color: #f8f9fa;
+  padding: 15px 0 5px 0;
+    color: #c4a002;
 }
 
 h2 {
@@ -162,7 +162,7 @@ ol li
     text-shadow: 5px 5px 5px #373737;
   border: 0;
   font-size: 55px;
-    color: #f8f9fa;
+    color: #bb9904;
 }
 
 #logo_text h1 a .logo_colour{ 
@@ -426,7 +426,7 @@ text-decoration: none;
   height: auto;
   text-align: center;
   margin: 0 auto 0 auto;
-  background: #6c757d;
+  background: #0c416e;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
     padding-top: 20px;
@@ -440,20 +440,20 @@ text-decoration: none;
 
 #content2 {
   width: 1050px;
-  height: 4280px;
+  height: 4320px;
   text-align: center;
   margin: 0 auto 0 auto;
-  background: #6c757d;
+  background: #0c416e;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
 }
 
 .content3{ 
   width: 1050px;
-  height: 353px;
+  height: 383px;
   text-align: center;
   margin: 0 auto 0 auto;
-  background: #6c757d;
+  background: #0c416e;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
     padding-top: 20px;
@@ -471,7 +471,7 @@ text-decoration: none;
     text-shadow: 5px 5px 9px #373737;
     padding-top: 20px;
     padding-bottom: 0px;
-    color: #f8f9fa;
+    color: #d49100;
 }
 
 table
@@ -627,10 +627,20 @@ button {
     border-radius: 3px;
 }
 
+#dark{
+  margin-left: 95%;
+  
+}
+
 button1 {
     margin-top: 20px;
 }
 
 #darkbutton button{
     margin-top: 20px;
+}
+
+.filters{
+  margin-bottom: 3%;
+  margin-left: 69%;
 }

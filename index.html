@@ -7,6 +7,7 @@
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 
@@ -16,6 +17,10 @@
       text-align: center;
     }
   </style>
+  <div id="dark">
+    <button onclick="myFunction()">   <i class="fas fa-sun"></i> Or <i class="fas fa-moon"></i></button>
+  </div>
+    
 
   <div id="main">
     <div id="header">
@@ -25,6 +30,8 @@
           <h1><a href="index.html">Rv Index</a></h1>
         </div>
       </div>
+
+      
 
       <div id="menubar">
         <ul id="menu">
@@ -79,8 +86,10 @@ element.classList.toggle("dark-mode");
 
     <div id="footer">
       <p><a href="index.html">Home</a> | <a href="page.html">Prices</a> | <a href="contact.html">Contact Us</a></p>
-        <button onclick="myFunction()">Toggle dark mode</button>
+        
     </div>
   </div>
+
+  <script src="dark.js"></script>
 </body>
 </html>
