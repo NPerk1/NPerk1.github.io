@@ -7,10 +7,19 @@
 
 body
 { 
-  margin: 0;
-  width: 99vw;
-  height: 100vh;
-   background: #FFFFFF;
+  background-image: url(light.jpg);
+   background-attachment: fixed;
+   background-position: 0 0;
+   min-height: 15.625em;
+   padding: 4em 0 12em;
+   background-repeat: no-repeat;
+   width: 100%;
+   -webkit-background-size: cover;
+   -ms-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   padding: 0;
  }
 
 p
@@ -132,7 +141,7 @@ ol li
 #header
 { 
 
-    color: rgb(255, 255, 255);
+    color: #495057;
 }
 
 #logo
@@ -157,7 +166,7 @@ ol li
 { 
     margin-left: -30px;
     padding: 8px 0 0 0;
-  color: rgb(255, 255, 255);
+  color: gray;
   text-decoration: none;
     text-shadow: 5px 5px 5px #373737;
   border: 0;
@@ -176,7 +185,7 @@ ol li
 #logo_text h2{ 
     font-size: 120%;
   padding: 4px 0 0 0;
-  color: #fff;
+  color: #495057;
 }
 
 #menubar{ 
@@ -208,7 +217,7 @@ ul#menu li a{
   text-decoration: none; 
   padding: 9px 15px 5px 15px;
   text-align: center;
-  color: #FFF;
+  color: #495057;
   border: none;
 } 
 
@@ -253,11 +262,11 @@ ul#menu li a:hover{
   display: block;
   background: transparent url(link.png) no-repeat left center;
   border: 0;
-    color: aliceblue;
+    color: black;
 }
 
 .sidebar li a:hover{
-    color: #adb5bd;
+    color: #fca311;
 }
 
 .sidebar li a.selected
@@ -521,8 +530,19 @@ table tr td
 }
 
 .dark-mode {
-    background-color: #171717;
-    color: aliceblue
+  background-image: url(dark.jpg);
+   background-attachment: fixed;
+   background-position: 0 0;
+   min-height: 15.625em;
+   padding: 4em 0 12em;
+   background-repeat: no-repeat;
+   width: 100%;
+   -webkit-background-size: cover;
+   -ms-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   padding: 0;
 }
 
 .dark-mode .contact {
