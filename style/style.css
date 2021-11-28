@@ -7,7 +7,7 @@
 
 body
 { 
-  background-image: url(light.jpg);
+  background-image: url(light\ 2.jpg);
    background-attachment: fixed;
    background-position: 0 0;
    min-height: 15.625em;
@@ -236,7 +236,7 @@ ul#menu li.selected a, ul#menu li.selected a:hover{
 }
 
 ul#menu li a:hover{ 
-    color: #93a8ac;
+    color: #fca311;
 }
 
 .sidebar
@@ -262,7 +262,7 @@ ul#menu li a:hover{
   display: block;
   background: transparent url(link.png) no-repeat left center;
   border: 0;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .sidebar li a:hover{
@@ -341,7 +341,7 @@ span{
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-decoration: none;
+  
 }
 
 #footer p
@@ -350,14 +350,22 @@ text-decoration: none;
     margin-bottom: 5px;
 }
 
-#footer a, #footer a:hover
+#footer a
 { 
     color: #ffffff;
-  text-decoration: none;}
+    text-decoration: none;
+    outline: none;
+    border-bottom: none;
+    font-size: 22px;
+    
+    
+    
+  }
 
 #footer a:hover
 { 
     text-decoration: none;
+    color: #fca311;
 }
 
 .search
@@ -435,7 +443,7 @@ text-decoration: none;
   height: auto;
   text-align: center;
   margin: 0 auto 0 auto;
-  background: #e7e9eb;
+  background: #718573;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
     padding-top: 20px;
@@ -449,10 +457,10 @@ text-decoration: none;
 
 #content2 {
   width: 1050px;
-  height: 4320px;
+  height: 4300px;
   text-align: center;
   margin: 0 auto 0 auto;
-  background: #e7e9eb;
+  background: #718573;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
 }
@@ -462,7 +470,8 @@ text-decoration: none;
   height: 383px;
   text-align: center;
   margin: 0 auto 0 auto;
-  background: #e7e9eb;
+  
+  background: #718573;
     box-shadow: 0px 0px 5px #383838;
     border-radius: 10px;
     padding-top: 20px;
