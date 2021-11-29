@@ -457,7 +457,7 @@ text-decoration: none;
 
 #content2 {
   width: 1050px;
-  height: 4300px;
+  height: auto;
   text-align: center;
   margin: 0 auto 0 auto;
   background: #718573;
@@ -672,4 +672,21 @@ button1 {
 .filters{
   margin-bottom: 3%;
   margin-left: 69%;
+}
+
+blink {
+  -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 2s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  10% {
+    visibility: hidden;
+  }
+  15% {
+    visibility: visible;
+  }
 }
